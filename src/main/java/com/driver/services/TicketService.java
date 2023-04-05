@@ -71,6 +71,9 @@ public class TicketService {
                 break;
             }
         }
+        if(x==-1||y==-1||y-x<0){
+            throw new Exception("Invalid stations");
+        }
 
         Ticket ticket=new Ticket();
         ticket.setPassengersList(passengerList);
